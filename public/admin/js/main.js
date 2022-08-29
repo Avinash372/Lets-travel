@@ -31,4 +31,11 @@ document.addEventListener("DOMContentLoaded", async () => {
               </tr>`;
         articles.insertAdjacentHTML("beforeend", postHTML);
     });
+    // CREATE POST
+    let addPostBtn = document.querySelector(".add-post");
+    let createPostBtn = document.querySelector("#v-pills-add-post-tab");
+
+    addPostBtn.addEventListener("click", () => {
+        createPostBtn.click();
+    });
 });
